@@ -28,7 +28,7 @@ before_install:
     - export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin
 
 install:
-    - echo y | sdkmanager 'ndk-bundle'
+    - printf "y\ny\n" | sdkmanager 'ndk-bundle'
     - echo y | sdkmanager 'platform-tools'
     - echo y | sdkmanager 'build-tools;27.0.3'
     - echo y | sdkmanager 'platforms;android-27'
