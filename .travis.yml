@@ -32,3 +32,7 @@ install:
     #- echo y | sdkmanager 'platform-tools'
     #- echo y | sdkmanager 'build-tools;27.0.3'
     #- echo y | sdkmanager 'platforms;android-27'
+
+script:
+   #- ./gradlew build connectedCheck
+   - ./gradlew assembleDebug
